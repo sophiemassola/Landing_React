@@ -1,0 +1,56 @@
+.padre{
+    display: grid;
+    padding: 20px;
+    padding-left: 60px; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.7fr;
+    grid-template-areas: 
+        "header header";
+}
+
+
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: 
+        "logo menu";
+    }
+
+
+    .logo{
+        grid-area: logo;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .menu{
+        grid-area: menu;
+        background-color: whitesmoke;
+        /*padding-right: 60px;*/
+    }
+    .menu ul{
+        display: flex;
+        justify-content:space-around;
+        list-style: none;
+        padding-top: 30px;
+    }
+    .menu li{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.1rem;
+        width: 10%;    
+    } 
+    .menu li a{
+        text-decoration: none;
+        color:rgb(14, 14, 133);
+    }
+    .menu li a:hover{
+        color:rgb(21, 112, 128);
+        font-weight: bold;
+    }
